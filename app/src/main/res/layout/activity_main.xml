@@ -1,0 +1,129 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+ 
+    tools:context="com.xiaoqiang.erweima.activity.MainActivity" >
+
+    <ImageView
+        android:id="@+id/SHOW_picture"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:src="@drawable/instructions" />
+
+    <TextView
+        android:id="@+id/qr_result"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="一码多用"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="http://"
+        android:ems="10" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/QQ_picture"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/qq" />
+
+        <ImageView
+            android:id="@+id/WEIXIN_picture"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/weixin"
+            />
+
+        <ImageView
+            android:id="@+id/WEIBO_picture"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/weibo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:padding="5dp">
+       
+
+        <Button
+            android:id="@+id/picture1"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+             android:background="@drawable/buttonstyle"
+            android:textColor="#ffffff"
+            android:layout_marginRight="5dp"
+            android:text="QQ" />
+
+        <Button
+            android:id="@+id/picture2"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+              android:layout_marginRight="5dp"
+             android:background="@drawable/buttonstyle"
+            android:textColor="#ffffff"
+            android:text="微信" />
+
+        <Button
+            android:id="@+id/picture3"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+             android:background="@drawable/buttonstyle"
+            android:textColor="#ffffff"
+            android:text="微博" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <Button
+            android:id="@+id/shengcheng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+           android:background="@drawable/buttonstyle"
+            android:textColor="#ffffff"
+            android:layout_marginRight="5dp"
+     
+            android:text="生成" />
+
+        <Button
+            android:id="@+id/jiexi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+               android:background="@drawable/buttonstyle"
+            android:textColor="#ffffff"
+            android:text="一码多用" />
+    </LinearLayout>
+
+</LinearLayout>
